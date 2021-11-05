@@ -6,7 +6,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { RenewDirective } from './renew.directive';
 import { SettingsDirective } from './settings.directive';
-import { TestDirective } from './test.directive';
 
 
 @NgModule({
@@ -14,8 +13,7 @@ import { TestDirective } from './test.directive';
     AppComponent,
     RenewDirective,
     SettingsDirective,
-    FiltersDirective,
-    TestDirective
+    FiltersDirective
   ],
   imports: [
     BrowserModule
