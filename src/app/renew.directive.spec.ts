@@ -24,7 +24,7 @@ class mockservice {
     return ddd;
   }
 }
-const mock = new mockservice() ;
+
 @Component({
   template: `<span #container appRenew> </span>`,
 })
