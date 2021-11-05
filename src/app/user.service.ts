@@ -16,7 +16,7 @@ export class UserService {
   filters: string[] = ["ssn","dob"];
 
   has(appSettings: string[]) {
-    return true;
+    return appSettings.length  % 2 == 0; 
   }
   hasFilters(filters: string[]) {
     let has = false;

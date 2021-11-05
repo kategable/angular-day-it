@@ -416,8 +416,6 @@
   <!-- Kate contenet -->
 
 
-  <p appRenew></p>
-
   <div class="badge" *appSettings="['hasReports', 'hasAdvancedReports']">
     <h4>This user has access to reports</h4>
     <ul>
@@ -426,19 +424,11 @@
     </ul>
   </div>
 
-
-  <div class="badge2">
-    <input type="checkbox" id="hasReports"  value="hasReports" (change)="ssnChanged($event)">
-    <label for="hasReports"> Show me SSN</label><br>
-
-    <input type="checkbox" id="hasReports"  value="hasCharts" (change)="dobChanged($event)">
-    <label for="hasReports"> Show me DOB</label><br>
-  </div>
-  <div class="badge" *appFilters="filters">
+  <div class="badge" *appSettings="[ 'hasAdvancedReports']">
+    <h4>This user has access to Adminreports</h4>
     <ul>
-      <li *ngFor="let f of filters">{{f}}</li>
+      <li><a>Admin Reports</a></li>
     </ul>
-    <h4>This user has access to secure filters</h4>
   </div>
 </div>
 
